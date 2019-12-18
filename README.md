@@ -1,3 +1,8 @@
+## How To Run The App Locally
+1. download the repository
+2. install the dependencies via $ npm install
+3. run the app locally via $ npm start
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

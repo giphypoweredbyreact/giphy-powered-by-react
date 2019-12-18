@@ -3,6 +3,10 @@
 2. install the dependencies via $ npm install
 3. run the app locally via $ npm start
 
+This app is also hosted via github pages here: 
+https://giphypoweredbyreact.github.io/giphy-powered-by-react
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

@@ -1,5 +1,5 @@
 {
-  "homepage": "http://giphypoweredbyreact.github.io",
+  "homepage": "http://giphypoweredbyreact.github.io/giphy-powered-by-react",
   "name": "giphy-powered-by-react",
   "version": "0.1.0",
   "private": true,
@@ -35,6 +35,6 @@
     ]
   },
   "devDependencies": {
-    "react-native-paper": "^3.3.0"
+    "gh-pages": "^2.1.1"
   }
 }

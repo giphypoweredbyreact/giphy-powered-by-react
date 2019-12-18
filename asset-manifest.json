@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.679f6e15.chunk.css",
-    "main.js": "/static/js/main.155f3230.chunk.js",
-    "main.js.map": "/static/js/main.155f3230.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.28e9258b.js",
-    "runtime-main.js.map": "/static/js/runtime-main.28e9258b.js.map",
-    "static/js/2.be476ecb.chunk.js": "/static/js/2.be476ecb.chunk.js",
-    "static/js/2.be476ecb.chunk.js.map": "/static/js/2.be476ecb.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.96715e39787ea0ad23f8346b8b33e264.js": "/precache-manifest.96715e39787ea0ad23f8346b8b33e264.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.679f6e15.chunk.css.map": "/static/css/main.679f6e15.chunk.css.map",
-    "static/js/2.be476ecb.chunk.js.LICENSE": "/static/js/2.be476ecb.chunk.js.LICENSE",
-    "static/media/App.css": "/static/media/searchicon.876d6c05.png"
+    "main.css": "/giphy-powered-by-react/static/css/main.b3b54940.chunk.css",
+    "main.js": "/giphy-powered-by-react/static/js/main.b66928ca.chunk.js",
+    "main.js.map": "/giphy-powered-by-react/static/js/main.b66928ca.chunk.js.map",
+    "runtime-main.js": "/giphy-powered-by-react/static/js/runtime-main.cca24ce1.js",
+    "runtime-main.js.map": "/giphy-powered-by-react/static/js/runtime-main.cca24ce1.js.map",
+    "static/js/2.be476ecb.chunk.js": "/giphy-powered-by-react/static/js/2.be476ecb.chunk.js",
+    "static/js/2.be476ecb.chunk.js.map": "/giphy-powered-by-react/static/js/2.be476ecb.chunk.js.map",
+    "index.html": "/giphy-powered-by-react/index.html",
+    "precache-manifest.6e786cae6fecf813863db944d0428304.js": "/giphy-powered-by-react/precache-manifest.6e786cae6fecf813863db944d0428304.js",
+    "service-worker.js": "/giphy-powered-by-react/service-worker.js",
+    "static/css/main.b3b54940.chunk.css.map": "/giphy-powered-by-react/static/css/main.b3b54940.chunk.css.map",
+    "static/js/2.be476ecb.chunk.js.LICENSE": "/giphy-powered-by-react/static/js/2.be476ecb.chunk.js.LICENSE",
+    "static/media/App.css": "/giphy-powered-by-react/static/media/searchicon.876d6c05.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.28e9258b.js",
+    "static/js/runtime-main.cca24ce1.js",
     "static/js/2.be476ecb.chunk.js",
-    "static/css/main.679f6e15.chunk.css",
-    "static/js/main.155f3230.chunk.js"
+    "static/css/main.b3b54940.chunk.css",
+    "static/js/main.b66928ca.chunk.js"
   ]
 }

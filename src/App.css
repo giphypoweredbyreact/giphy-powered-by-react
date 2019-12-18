@@ -1,3 +1,7 @@
+#gif-container {
+  width: 100%;
+}
+
 #total-results {
   font-style: italic;
 }

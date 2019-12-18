@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/giphy-powered-by-react/static/css/main.b2fb0873.chunk.css",
+    "main.css": "/giphy-powered-by-react/static/css/main.05a3076b.chunk.css",
     "main.js": "/giphy-powered-by-react/static/js/main.59c137c4.chunk.js",
     "main.js.map": "/giphy-powered-by-react/static/js/main.59c137c4.chunk.js.map",
     "runtime-main.js": "/giphy-powered-by-react/static/js/runtime-main.cca24ce1.js",
@@ -8,16 +8,16 @@
     "static/js/2.be476ecb.chunk.js": "/giphy-powered-by-react/static/js/2.be476ecb.chunk.js",
     "static/js/2.be476ecb.chunk.js.map": "/giphy-powered-by-react/static/js/2.be476ecb.chunk.js.map",
     "index.html": "/giphy-powered-by-react/index.html",
-    "precache-manifest.c7a042b4f8194448b60720e066a666ec.js": "/giphy-powered-by-react/precache-manifest.c7a042b4f8194448b60720e066a666ec.js",
+    "precache-manifest.1176a0c7d750b23cb37fb4cd18c4b216.js": "/giphy-powered-by-react/precache-manifest.1176a0c7d750b23cb37fb4cd18c4b216.js",
     "service-worker.js": "/giphy-powered-by-react/service-worker.js",
-    "static/css/main.b2fb0873.chunk.css.map": "/giphy-powered-by-react/static/css/main.b2fb0873.chunk.css.map",
+    "static/css/main.05a3076b.chunk.css.map": "/giphy-powered-by-react/static/css/main.05a3076b.chunk.css.map",
     "static/js/2.be476ecb.chunk.js.LICENSE": "/giphy-powered-by-react/static/js/2.be476ecb.chunk.js.LICENSE",
     "static/media/App.css": "/giphy-powered-by-react/static/media/searchicon.876d6c05.png"
   },
   "entrypoints": [
     "static/js/runtime-main.cca24ce1.js",
     "static/js/2.be476ecb.chunk.js",
-    "static/css/main.b2fb0873.chunk.css",
+    "static/css/main.05a3076b.chunk.css",
     "static/js/main.59c137c4.chunk.js"
   ]
 }

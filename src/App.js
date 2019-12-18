@@ -114,13 +114,15 @@ class GifContainer extends Component {
           ))}
           </div>
           <div id="bottom-panel">
-            {this.error &&
+            {this.state.error &&
               <div style={{ color: '#900' }}>
-                {this.error}
+                <p>{this.state.error}</p>
               </div>
             }
-            {this.isLoading &&
-              <div>Loading...</div>
+            {this.state.isLoading &&
+              <div>
+                <p>Loading...</p>
+              </div>
             }
             {this.state.noResults &&
               <div>

@@ -2,14 +2,14 @@ import React, {Component} from 'react';
 import logo from './images/giphy-logo.png';
 import './App.css';
 import {fetchGifs} from './giphyService';
-//import debounce from 'lodash.debounce';
 
 class GifContainer extends Component {
   constructor(props) {
-    super (props);
+    super(props);
 
     //set initial state
     this.state = {
+      search: this.props.search,
       error: false,
       hasMore: true,
       isLoading: false,
@@ -42,20 +42,40 @@ class GifContainer extends Component {
         window.innerHeight + document.documentElement.scrollTop
         === document.documentElement.offsetHeight
       ) {
-        loadGifs(offset);
+        if (this.state.search !== '') {
+          loadGifs(offset);
+        }
       }
     };
   }
 
-
   componentDidMount() {
     // load gifs on initial load
-    this.loadGifs();
+    if (this.state.search !== '') {
+      this.loadGifs();
+    }
+  }
+
+  componentDidUpdate(prevProps) {
+    //compare props in case search string changes
+    if (this.props.search !== prevProps.search) {
+      this.setState({
+        search: this.props.search,
+        error: false,
+        hasMore: true,
+        isLoading: false,
+        noResults: false,
+        totalResults: 0,
+        offset: 0,
+        gifs: [],
+      });
+      this.loadGifs();
+    }
   }
 
   loadGifs = () => {
     this.setState({ isLoading: true }, () => {
-      fetchGifs(this.state.offset)
+      fetchGifs(this.state.search, this.state.offset)
         .then((results) => {
           console.log(results);
           // Creates a massaged array of gif data
@@ -141,23 +161,48 @@ class GifContainer extends Component {
 
 }
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <div id='searchbar'>
-              <form action="/action_page.php">
-                <img id='logo' src={logo} className="App-logo" alt="logo" />
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="text" placeholder="Giphy Search.." name="search" />
-              </form>
-        </div>
-        <div id="gif-container">
-          <GifContainer />
-        </div>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      searchInput: '',
+      searchString: ''
+    }
+    this.handleChange = this.handleChange.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
+  }
+
+  handleChange(event) {
+    this.setState(
+      {searchInput : event.target.value });
+  }
+
+  handleSubmit(event) {
+    event.preventDefault();
+    this.setState(
+      {searchString : this.state.searchInput });
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <div id='searchbar'>
+                <form onSubmit={this.handleSubmit}>
+                  <img id='logo' src={logo} className="App-logo" alt="logo" />
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <input type="text" placeholder="Giphy Search.." name="search" value={this.state.searchInput} onChange={this.handleChange}/>
+                </form>
+          </div>
+          <div id="gif-container">
+            <GifContainer search={this.state.searchString}/>
+          </div>
+        </header>
+      </div>
+    );
+  }
+
 }
 
 export default App;

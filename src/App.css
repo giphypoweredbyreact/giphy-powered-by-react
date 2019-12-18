@@ -1,3 +1,28 @@
+#total-results {
+  font-style: italic;
+}
+
+#bottom-panel {
+  font-style: italic;
+}
+
+#grid {
+  column-count: 3;
+  column-gap: 0em;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+  height: 100%;
+}
+
+img {
+  display: flex;
+}
+
 input[type=text] {
   width: 800px;
   box-sizing: border-box;

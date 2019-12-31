@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/giphy-powered-by-react/static/css/main.f571c784.chunk.css",
-    "main.js": "/giphy-powered-by-react/static/js/main.9aa66b97.chunk.js",
-    "main.js.map": "/giphy-powered-by-react/static/js/main.9aa66b97.chunk.js.map",
+    "main.css": "/giphy-powered-by-react/static/css/main.4be6fa95.chunk.css",
+    "main.js": "/giphy-powered-by-react/static/js/main.f32ff99a.chunk.js",
+    "main.js.map": "/giphy-powered-by-react/static/js/main.f32ff99a.chunk.js.map",
     "runtime-main.js": "/giphy-powered-by-react/static/js/runtime-main.cca24ce1.js",
     "runtime-main.js.map": "/giphy-powered-by-react/static/js/runtime-main.cca24ce1.js.map",
     "static/js/2.b8782a6e.chunk.js": "/giphy-powered-by-react/static/js/2.b8782a6e.chunk.js",
     "static/js/2.b8782a6e.chunk.js.map": "/giphy-powered-by-react/static/js/2.b8782a6e.chunk.js.map",
     "index.html": "/giphy-powered-by-react/index.html",
-    "precache-manifest.5fac2453310568dddcc43a5a846c29b1.js": "/giphy-powered-by-react/precache-manifest.5fac2453310568dddcc43a5a846c29b1.js",
+    "precache-manifest.adf334cfd8390df3a6123bf5aeff0c69.js": "/giphy-powered-by-react/precache-manifest.adf334cfd8390df3a6123bf5aeff0c69.js",
     "service-worker.js": "/giphy-powered-by-react/service-worker.js",
-    "static/css/main.f571c784.chunk.css.map": "/giphy-powered-by-react/static/css/main.f571c784.chunk.css.map",
+    "static/css/main.4be6fa95.chunk.css.map": "/giphy-powered-by-react/static/css/main.4be6fa95.chunk.css.map",
     "static/js/2.b8782a6e.chunk.js.LICENSE": "/giphy-powered-by-react/static/js/2.b8782a6e.chunk.js.LICENSE",
     "static/media/App.css": "/giphy-powered-by-react/static/media/searchicon.876d6c05.png"
   },
   "entrypoints": [
     "static/js/runtime-main.cca24ce1.js",
     "static/js/2.b8782a6e.chunk.js",
-    "static/css/main.f571c784.chunk.css",
-    "static/js/main.9aa66b97.chunk.js"
+    "static/css/main.4be6fa95.chunk.css",
+    "static/js/main.f32ff99a.chunk.js"
   ]
 }

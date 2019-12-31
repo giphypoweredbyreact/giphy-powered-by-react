@@ -164,7 +164,7 @@ class GifContainer extends Component {
                 src={gif.url}
                 style={{
                   borderRadius: '4px',
-                  height:'500px',
+                  height:'400px',
                   width: '100%',
                 }}
               />
@@ -229,6 +229,7 @@ class App extends Component {
           <div id='searchbar'>
                 <form onSubmit={this.handleSubmit}>
                   <img id='logo' src={logo} className="App-logo" alt="logo" />
+                  <h4>Giphy Powered By React</h4>
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   <input type="text" placeholder="Giphy Search.." name="search" value={this.state.searchInput} onChange={this.handleChange}/>
                 </form>

@@ -12,19 +12,20 @@
 
 #grid {
   column-count: 3;
-  column-gap: 0em;
+  column-gap: 0.5em;
 }
 
-/* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
   display: inline-block;
-  margin: 0 0 1em;
+  margin: 0 0 0;
   width: 100%;
   height: 100%;
 }
 
 img {
   display: flex;
+  margin: 0em 0em 0em 0em;
+  padding-top: 0.5em;
 }
 
 input[type=text] {

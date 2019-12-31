@@ -17,6 +17,9 @@ class GifContainer extends Component {
       totalResults: 0,
       offset: 0,
       gifs: [],
+      column1: [],
+      column2: [],
+      column3: [],
     }
 
     // Binds our scroll event handler
@@ -68,6 +71,9 @@ class GifContainer extends Component {
         totalResults: 0,
         offset: 0,
         gifs: [],
+        column1: [],
+        column2: [],
+        column3: [],
       });
       this.loadGifs();
     }
@@ -85,6 +91,37 @@ class GifContainer extends Component {
             url: gif.images.downsized_medium.url,
           }));
 
+          var array1 = [];
+          var array2 = [];
+          var array3 = [];
+
+          for(var i=0; i < nextGifs.length; i++) {
+            if (i%3 === 0) {
+              array1 = array1.concat(nextGifs[i]);
+            } else if(i%3 === 1) {
+              array2 = array2.concat(nextGifs[i]);
+            } else {
+              array3 = array3.concat(nextGifs[i]);
+            }
+          }
+
+          console.log(array1);
+          console.log(array2);
+          console.log(array3);
+
+          const nextGifsOrganized = [
+            ...array1,
+            ...array2,
+            ...array3,
+          ];
+
+          console.log(nextGifsOrganized);
+          this.state.column1 = this.state.column1.concat(array1);
+          this.state.column2 = this.state.column2.concat(array2);
+          this.state.column3 = this.state.column3.concat(array3);
+
+
+
           // Merges the next users into our existing users
           this.setState({
             // Note: Depending on the API you're using, this value may
@@ -92,12 +129,13 @@ class GifContainer extends Component {
             // is no additional data to be loaded
             hasMore: (this.state.gifs.length <results.pagination.total_count),
             isLoading: false,
-            offset: this.state.offset + 10,
+            offset: this.state.offset + 9,
             noResults: results.pagination.total_count === 0,
             totalResults: results.pagination.total_count,
             gifs: [
-              ...this.state.gifs,
-              ...nextGifs,
+              ...this.state.column1,
+              ...this.state.column2,
+              ...this.state.column3,
             ],
           });
         })
@@ -126,7 +164,7 @@ class GifContainer extends Component {
                 src={gif.url}
                 style={{
                   borderRadius: '4px',
-                  height:'100%',
+                  height:'500px',
                   width: '100%',
                 }}
               />

@@ -129,7 +129,7 @@ class GifContainer extends Component {
             // is no additional data to be loaded
             hasMore: (this.state.gifs.length <results.pagination.total_count),
             isLoading: false,
-            offset: this.state.offset + 9,
+            offset: this.state.offset + 12,
             noResults: results.pagination.total_count === 0,
             totalResults: results.pagination.total_count,
             gifs: [
@@ -164,7 +164,7 @@ class GifContainer extends Component {
                 src={gif.url}
                 style={{
                   borderRadius: '4px',
-                  height:'400px',
+                  height:'9em',
                   width: '100%',
                 }}
               />
@@ -229,7 +229,7 @@ class App extends Component {
           <div id='searchbar'>
                 <form onSubmit={this.handleSubmit}>
                   <img id='logo' src={logo} className="App-logo" alt="logo" />
-                  <h4>Giphy Powered By React</h4>
+                  <h2>Giphy Powered By React</h2>
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   <input type="text" placeholder="Giphy Search.." name="search" value={this.state.searchInput} onChange={this.handleChange}/>
                 </form>
